@@ -8,29 +8,17 @@
 
     <!--Librerias (frameworks)-------------------------------------------------------------------------------->
     <!--jQuery-->
-    <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
     <!--Bootstrap con material desing-->
-    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/mdb.css">
-    <script type="text/javascript" src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/mdb.css">
+    <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
     <!-- Incluir scripts de Bootstrap y jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Incluir estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Sweetalert2-->
-    <script language="JavaScript" type="text/javascript" src="../sweetalert2/sweetalert2.js"></script>
-    
-    <!--Scripts -------------------------------------------------------------------------------------->
-    <!-- Limpiar Campos -->
-    <script language="JavaScript" type="text/javascript" src="/js/limpiarCampos.js"></script>
-    <!-- ANDRÉS TORRES -->
-    <script language="JavaScript" type="text/javascript" src="/js/andresTorres.js"></script>
-    <!-- ANDRÉS PEDROZA -->
-    <script language="JavaScript" type="text/javascript" src="/js/andresPedroza.js"></script>
-    <!-- JHOANA ALVARADO -->
-    <script language="JavaScript" type="text/javascript" src="/js/jhoanaAlvarado.js"></script>
-    <!-- HECTOR LÓPEZ -->
-    <script language="JavaScript" type="text/javascript" src="/js/hectorLopez.js"></script>
+    <script language="JavaScript" type="text/javascript" src="sweetalert2/sweetalert2.js"></script>   
 
 </head>
 
@@ -86,22 +74,32 @@
                                 <div class="col-md-12 my-auto-header">
                                     <label class="label_azul">INFORMACIÓN CLIENTE</label>
                                 </div>
-                                <div class="col-md-12 my-auto">
-                                    <label>Nombres</label>
+                                <!-- <div class="col-md-12 my-auto">
+                                    <label>Ingresa un valor:</label>
                                     <input id="input_valor_torres" type="text">
-                                </div>
+                                </div> -->
                                 <!-- Aguegue estas lineas, para la info de los nuevos clientes . -->
-                            </div>
-                            <div class="col-md-12 my-auto">
-                                <label>Apellidos</label>
-                                <input id="input_valor_torres" type="text">
-                            </div>
-                                <!-- Aqui quedo regustrado el segundo Commit -->
-                        </div>
-                        <div class="col-md-12 my-auto">
-                            <label>Cedula</label>
-                            <input id="input_valor_torres" type="text">
-                        </div>
+                                <div class="col-md-12 my-auto">
+                                    <label>Ingresa valor nombre:</label>
+                                    <input id="input_valor_nombre" type="text">
+                                </div>
+                                <!-- Espacio -->
+                                <div class="col-md-12 my-auto">
+                                    <label>Ingresa valor apellido:</label>
+                                    <input id="input_valor_apellido" type="text">
+                                </div>
+                                <!-- Espacio -->
+                                <div class="col-md-12 my-auto">
+                                    <label>Ingresa valor cedula:</label>
+                                    <input id="input_valor_cedula" type="text">
+                                </div>
+                                <!-- Espacio -->
+                                <div class="col-md-12 my-auto">
+                                    <label>Ingresa valor direccion:</label>
+                                    <input id="input_valor_direccion" type="text">
+                                </div>
+
+                                <!-- Espacion -->
 
                                 <div class="modal-footer">
                                     <!-- Botón para guardar datos -->
@@ -235,5 +233,15 @@
         </div>
     </div>
 </body>
-
+<!--Scripts -------------------------------------------------------------------------------------->
+    <!-- Limpiar Campos -->
+    <script language="JavaScript" type="text/javascript" src="js/limpiarCampos.js"></script>
+    <!-- ANDRÉS TORRES -->
+    <script language="JavaScript" type="text/javascript" src="js/andresTorres.js"></script>
+    <!-- ANDRÉS PEDROZA -->
+    <script language="JavaScript" type="text/javascript" src="js/andresPedroza.js"></script>
+    <!-- JHOANA ALVARADO -->
+    <script language="JavaScript" type="text/javascript" src="js/jhoanaAlvarado.js"></script>
+    <!-- HECTOR LÓPEZ -->
+    <script language="JavaScript" type="text/javascript" src="js/hectorLopez.js"></script>
 </html>

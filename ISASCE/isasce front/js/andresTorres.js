@@ -1,5 +1,5 @@
 function andresTorres() {
-    limpiarCamposTorres();
+    //limpiarCamposTorres();
     // Acá de define la función para guardar datos dentro de la función mostrarModal (función anidada)
     function guardarDatos() {
         /**
@@ -7,7 +7,19 @@ function andresTorres() {
          */
 
         // Por ejemplo:
-        var inputValor = $("#input_valor_torres").val();
+        /* var inputValor = $("#input_valor_torres").val();
+        console.log('Valor capturado:', inputValor); */
+        /* Espacio */
+        var inputValor = $("#input_valor_nombre").val();
+        console.log('Valor capturado:', inputValor);
+        /* Espacio */
+        var inputValor = $("#input_valor_apellido").val();
+        console.log('Valor capturado:', inputValor);
+        /* Espacio */
+        var inputValor = $("#input_valor_cedula").val();
+        console.log('Valor capturado:', inputValor);
+        /* Espacio */
+        var inputValor = $("#input_valor_direccion").val();
         console.log('Valor capturado:', inputValor);
         /** 
          * Se crea la ruta para enviar los datos al back end mediante la tecnología FETCH de Js
