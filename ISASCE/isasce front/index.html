@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Andres Pedroza, comentario de push-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,8 +53,10 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" data-target="#modal_crear_cliente" data-toggle="modal"
                                 onclick="andresTorres()">Andrés Torres</a>
-                            <a class="dropdown-item" data-target="#modal_crear_proveedor" data-toggle="modal"
-                                onclick="andresPedroza()">Andrés Pedroza</a>
+
+                            <a href="#" class="dropdown-item" data-target="#modal_crear_proveedor" data-toggle="modal"
+                                onclick="mostrarModal()">Andrés Pedroza</a>
+
                             <a class="dropdown-item" data-target="#modal_crear_producto" data-toggle="modal"
                                 onclick="jhoanaAlvarado()">Jhoana Alvarado</a>
                             <a class="dropdown-item" data-target="#modal_crear_personal" data-toggle="modal"
@@ -68,7 +70,7 @@
             </div>
         </div>
     </nav>
-
+<!-- JULIAN -->
     <!-- Modal crear Cliente - Andrés Torres***************** -->
     <div class="modal fade" id="modal_crear_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -90,6 +92,7 @@
                                     <label>Ingresa un valor:</label>
                                     <input id="input_valor_torres" type="text">
                                 </div>
+
                                 <div class="modal-footer">
                                     <!-- Botón para guardar datos -->
                                     <button id="boton_guardar_datos_cliente" type="button"
@@ -107,6 +110,12 @@
             </div>
         </div>
     </div>
+
+
+
+<!-- GABRIELA2023 VIERNES -->
+
+
 
     <!-- Modal crear Proveedor - Andrés Pedroza***************** -->
     <div class="modal fade" id="modal_crear_proveedor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -185,6 +194,7 @@
     </div>
 
     <!-- Modal crear Personal - Hector López***************** -->
+    <!-- Prueba comentarios Héctor López -->
     <div class="modal fade" id="modal_crear_personal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -224,5 +234,6 @@
     <!-- Modal crear factura de venta - Eudrey Reyes - En desarrollo***************** -->
     <!-- Otro cambio***************** -->
 </body>
-
+<script src="js/andresPedroza.js" type=""></script>
+<script src="sweetalert2/sweetalert2.js" type=""></script>
 </html>
