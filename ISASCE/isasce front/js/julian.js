@@ -6,6 +6,15 @@ function julian() {
          * Acá se capturan los datos del DOM
          */
 
+        var input01 = $("#input01").val();
+        var input02 = $("#input02").val();
+        var input03 = $("#input03").val();
+
+        arr_input=[input01,input02,input03];
+        obj_input={datos:arr_input};
+
+        console.log(obj_input);
+/** 
         // Por ejemplo:
         var fechaInventario = $("#input_fecha_inventario").val();
         console.log('Fecha de ingreso inventario:', fechaInventario);
@@ -16,7 +25,7 @@ function julian() {
          *  
          */
         // Datos a enviar al servidor en formato JSON // agregar datos faltantes
-        var datos = {
+        /** var datos = {
             fechaInventario: fechaInventario,
             nombreProducto: nombreProducto
         };
@@ -53,6 +62,7 @@ function julian() {
                 Swal.fire('Error al guardar los datos.', '', 'error');
             });
 
+            **/
 
     }
 

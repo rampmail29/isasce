@@ -738,61 +738,72 @@
       </div>
     </div>
 
+    
     <!-- Modal crear Inventario - Julián -->
-    <div
-      class="modal fade"
-      id="modal_crear_inventario"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <label class="modal-title">FORMATO DE CREACIÓN DE INVENTARIO</label>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="table-wrapper">
-            <div class="modal-body" align="center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12 my-auto-header">
-                    <label class="label_azul">INFORMACIÓN INVENTARIO</label>
-                  </div>
-                  <div class="col-md-12 my-auto">
-                    <label>Fecha de ingreso de inventario:</label>
-                    <input id="input_fecha_inventario" type="date" />
-                  </div>
-                  <hr />
 
-                  <div class="col-md-12 my-auto">
-                    <label>Ingresa el nombre del producto:</label>
-                    <input
-                      id="input_nombre_producto_modal_inventario"
-                      type="text"
-                    />
-                  </div>
-                  <hr />
-
-                  <div class="modal-footer">
-                    <!-- Botón para guardar datos -->
-                    <button
-                      id="boton_guardar_datos_inventario"
-                      type="button"
-                      class="btn btn-primary"
-                    >
-                      Guardar Datos
-                    </button>
-                  </div>
+    <div class="modal fade" id="modal_crear_inventario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label class="modal-title">FORMATO DE CREACIÓN DE INVENTARIO</label>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                 </div>
+                <div class="table-wrapper">
+                    <div class="modal-body" align="left">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <label class="label_azul">INFORMACIÓN INVENTARIO</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="imput-control">Fecha de ingreso</label>
+                                    <input id="input01" name="input01" type="date" class="form-control" title="Fecha de ingreso">
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="imput-control">Fecha Salida</label>
+                                    <input id="input02" name="input02" type="date" class="form-control" title="Fecha Salida">
+                                </div><br>
+                        
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="imput-control">Producto</label>
+                                    <input id="input03" name="input03" type="text" class="form-control" title="Fecha Salida">
+                                </div>
+                             
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label>Cantidad del Producto:</label>
+                                    <input id="input_cantidad_producto" name="" type="number" class="form-control form-group">
+                                </div>
+                               
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label>Valor del Producto:</label>
+                                    <input id="input_valor_producto" type="text">
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label>Fecha Salida del Producto</label>
+                                    <input id="input_fecha_salida" type="date">
+                                </div>
+                              
+
+                                <div class="modal-footer">
+                                    <!-- Botón para guardar datos -->
+                                    <button id="btn_limpiar" type="button" class="btn btn-primary"
+                                    onclick="limpiarCamposJulian()">Borrar</button>
+                                    <button id="boton_guardar_datos_inventario" type="button" class="btn btn-primary">Guardar
+                                        Datos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="boton_cerrar_modal" type="button" class="btn btn-default"
+                            data-dismiss="modal">Cerrar</button>
+                    </div>
+                 </div>
               </div>
             </div>
             <div class="modal-footer">
@@ -809,6 +820,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Modal crear Personal - Hector López***************** -->
     <div
