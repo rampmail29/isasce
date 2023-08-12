@@ -62,7 +62,7 @@ function julian() {
                 Swal.fire('Error al guardar los datos.', '', 'error');
             });
 
-            **/
+            COMENTARIO **/
 
     }
 
