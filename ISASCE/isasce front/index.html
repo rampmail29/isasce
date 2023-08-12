@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Navbar y Lista Desplegable</title>
     <!--Librerias (frameworks)-------------------------------------------------------------------------------->
     <!--jQuery-->
@@ -108,7 +110,6 @@
         </div>
       </div>
     </nav>
-    <!-- JULIAN -->
 
     <!-- Modal crear Cliente - Andrés Torres***************** -->
     <div
@@ -189,48 +190,71 @@
     </div>
 
     <!-- Modal crear Sucursal - Victor Carrillo -->
-    <div
-      class="modal fade"
-      id="modal_crear_sucursal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <label class="modal-title">FORMATO DE CREACIÓN DE SUCURSAL</label>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="table-wrapper">
-            <div class="modal-body" align="center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12 my-auto-header">
-                    <label class="label_azul">INFORMACIÓN SUCURSAL</label>
-                  </div>
-                  <div class="col-md-12 my-auto">
-                    <label>Ingresa el nombre de la sucursal:</label>
-                    <input id="input_nombre_sucursal" type="text" />
-                  </div>
-                  <div class="modal-footer">
-                    <!-- Botón para guardar datos -->
-                    <button
-                      id="boton_guardar_datos_sucursal"
-                      type="button"
-                      class="btn btn-primary"
-                    >
-                      Guardar Datos
-                    </button>
-                  </div>
+
+    <div class="modal fade" id="modal_crear_sucursal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label class="modal-title">FORMATO DE CREACIÓN DE SUCURSAL</label>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="table-wrapper">
+                    <div class="modal-body" align="center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 my-auto-header">
+                                    <label class="label_azul">INFORMACIÓN SUCURSAL</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id">Nombre de la sucursal</label>
+                                    <input type="text" id="input_nombre_sucursal" name="nomsuc" class="form-control"
+                                        title="Title Nombre de la sucursal"
+                                        autocomplete="off" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="id">Dirección de la sucursal</label>
+                                    <input type="text" id="input_direccion_sucursal" name="dirsuc" class="form-control"
+                                        title="Title Dirección de la sucursal"
+                                        autocomplete="off" />
+                                </div>
+                                <div class="col-md-12 my-auto">
+                                    <label>Tipo</label>
+                                    <select class="form-control" id="select_tipo_sucursal" required
+                                     title="Title Lista Tipos">
+                                        <option value="">Elija una opción</option>
+                                        <option value="P">Privada</option>
+                                        <option value="T">Pública</option>
+                                        <option value="M">Mixta</option>
+                                    </select>
+                                    <br>
+                                </div>                                
+                                <div class="form-group">
+                                    <label for="id">Fecha Creación</label>
+                                    <input type="date" id="input_fecha_sucursal" name="fecsuc" class="form-control"
+                                        title="Title Fecha Creación"
+                                        autocomplete="off" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="id">Observaciones de la sucursal</label>
+                                    <input type="text" id="input_obsrvaciones_sucursal" name="obssuc" class="form-control"
+                                        title="Title Observaciones de la sucursal"
+                                        autocomplete="off" />
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- Botón para guardar datos -->
+                                    <button id="boton_guardar_datos_sucursal" type="button"
+                                        class="btn btn-primary">Guardar
+                                        Datos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="boton_cerrar_modal" type="button" class="btn btn-default"
+                            data-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
               </div>
             </div>
