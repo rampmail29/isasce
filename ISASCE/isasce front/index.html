@@ -617,191 +617,66 @@
     </div>
 
     <!-- Modal crear Producto - Jhoana Alvarado***************** -->
-    <div
-      class="modal fade"
-      id="modal_crear_producto"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <label class="modal-title">FORMATO DE CREACIÓN DE PRODUCTO</label>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="table-wrapper">
-            <div class="modal-body" align="center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12 my-auto-header">
-                    <label class="label_azul">INFORMACIÓN PRODUCTO</label>
-                  </div>
-                  <div class="col-md-12 my-auto">
-                    <label>Ingresa un valor:</label>
-                    <input id="input_valor_jhoana" type="text" />
-                  </div>
-                </div>
 
-                <div class="table-wrapper">
-                  <div class="modal-body">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12 my-auto-header">
-                          <label class="label_azul">INFORMACIÓN PRODUCTO</label>
-                        </div>
-                        <div class="col-md-12 my-auto">
-                          <label>COLOR:</label>
-                          <input id="input_color" type="text" />
-                        </div>
-                        <div class="col-md-12 my-auto">
-                          <label>PRECIO</label>
-                          <input id="input_precio" type="text" />
-                        </div>
-                        <div class="col-md-12 my-auto">
-                          <label>TALLA:</label>
-                          <input id="input_talla" type="text" />
-                        </div>
-                        <div class="col-md-12 my-auto">
-                          <label>MATERIAL:</label>
-                          <input id="" type="text" />
-                        </div>
-                        <div class="col-md-12 my-auto">
-                          <label>DESCUENTO:</label>
-                          <input id="" type="text" />
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <!-- Botón para guardar datos -->
-                        <button
-                          id="btn_limpiar"
-                          type="button"
-                          class="btn btn-primary"
-                          onclick="limpiarCamposJhoana()"
-                        >
-                          Borrar
-                        </button>
-                        <button
-                          id="boton_guardar_datos_producto"
-                          type="button"
-                          class="btn btn-primary"
-                        >
-                          Guardar
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      id="boton_cerrar_modal"
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Cerrar
-                    </button>
-                  </div>
-
-                  <div class="modal-footer">
-                    <!-- Botón para guardar datos -->
-                    <button
-                      id="boton_guardar_datos_producto"
-                      type="button"
-                      class="btn btn-primary"
-                    >
-                      Guardar Datos
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  id="boton_cerrar_modal"
-                  type="button"
-                  class="btn btn-default"
-                  data-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-    <!-- Modal crear Inventario - Julián -->
-
-    <div class="modal fade" id="modal_crear_inventario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <form action="#" method="post">
+        <div class="modal fade" id="modal_crear_producto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <label class="modal-title">FORMATO DE CREACIÓN DE INVENTARIO</label>
+                    <label class="modal-title">FORMATO DE CREACIÓN DE PRODUCTO</label>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="table-wrapper">
-                    <div class="modal-body" align="left">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    <label class="label_azul">INFORMACIÓN INVENTARIO</label>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label class="imput-control">Fecha de ingreso</label>
-                                    <input id="input01" name="input01" type="date" class="form-control" title="Fecha de ingreso">
-                                </div>
-
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label class="imput-control">Fecha Salida</label>
-                                    <input id="input02" name="input02" type="date" class="form-control" title="Fecha Salida">
-                                </div><br>
-                        
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label class="imput-control">Producto</label>
-                                    <input id="input03" name="input03" type="text" class="form-control" title="Fecha Salida">
-                                </div>
-                             
-
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label>Cantidad del Producto:</label>
-                                    <input id="input_cantidad_producto" name="" type="number" class="form-control form-group">
-                                </div>
-                               
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label>Valor del Producto:</label>
-                                    <input id="input_valor_producto" type="text">
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label>Fecha Salida del Producto</label>
-                                    <input id="input_fecha_salida" type="date">
-                                </div>
-                              
-
-                                <div class="modal-footer">
-                                    <!-- Botón para guardar datos -->
-                                    <button id="btn_limpiar" type="button" class="btn btn-primary"
-                                    onclick="limpiarCamposJulian()">Borrar</button>
-                                    <button id="boton_guardar_datos_inventario" type="button" class="btn btn-primary">Guardar
-                                        Datos</button>
+                        aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="table-wrapper">
+                        <div class="modal-body" align="left">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        <div class="form-group">
+                                            <label>Nombre de producto *</label>
+                                            <input id="tem1" name="tem1" maxlength="20" required="required" type="text" class="form-control" title="Nombre del producto que desea registrar">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <div class="form-group">
+                                            <label class="input-control">Código *</label>
+                                            <input id="tem2" name="tem2" maxlength="20" required="required" type="number" class="form-control" title="código del producto"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <div class="form-group">
+                                            <label class="input-control" for="tem3">Color *</label>
+                                            <select class="form-control" name="tem3" id="tem3" required="required" title="Seleccione el tipo de identificación segun corresponda">
+                                                <option value="">Elija una opción</option>
+                                                <option value="Negro">Negro</option>
+                                                <option value="Gris">Gris</option>
+                                                <option value="Amarillo">Amarillo</option>
+                                                <option value="Azul">Azul</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        <div class="form-group">
+                                            <label class="input-control">Precio *</label>
+                                            <input id="tem4" name="tem4" maxlength="20" required="required" type="number" class="form-control" title="precio del producto">
+                                        </div>
+                                    </div>        
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        <div class="form-group">
+                                            <label class="input-control">Descripción *</label>
+                                            <textarea id="tem5" name="tem5" maxlength="20" required="required" type="number" class="form-control" title="precio del producto"></textarea>
+                                        </div>
+                                    </div>                         
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="boton_cerrar_modal" type="button" class="btn btn-default"
+                        <div class="modal-footer">
+                            <button id="boton_guardar_datos_producto" type="button" class="btn btn-primary" onclick="">Guardar Datos</button>
+                            <button id="boton_limpiar_datos_producto" type="button" class="btn btn-success" onclick="limpiarCamposJhoana()">Limpiar campos</button>
+                            <button id="boton_cerrar_modal" type="button" class="btn btn-default"
+
                             data-dismiss="modal">Cerrar</button>
+                        </div>
                     </div>
                  </div>
               </div>
@@ -816,11 +691,10 @@
                 Cerrar
               </button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
+            <!-- COMENTARIO GABRIELLA SEPT 2 -->
+        </div>
+    </form>
 
     <!-- Modal crear Personal - Hector López***************** -->
     <div
